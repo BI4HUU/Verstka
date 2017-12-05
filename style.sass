@@ -1,0 +1,138 @@
+// .container2
+// 	display: flex
+// 	width: 80%
+// 	margin: 0 auto
+// 	min-width: 1000px
+// 	flex-direction: row
+// 	position: relative
+// width: 1100px
+
+//////////////////
+	
+@font-face 
+	font-family: 'FontAwesome'
+	src: url('font.ttf')
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+.posR
+	position: relative
+body
+	background: #ccc
+	font-family: sans-serif
+	padding: 0
+	margin: 0
+	font-size: 10px
+	background: #999
+
+.container
+	min-width: 920px
+	max-width: 1100px
+	margin: 0 auto
+.posA
+	position: absolute
+	left: 0
+	min-width: 920px
+	max-width: 1100px
+	margin: 0 auto
+
+.contactFon
+	background: #000
+	position: relative
+.contact
+	display: flex
+	// top: 0
+	justify-content: space-between
+	padding: 12px 0
+	color: #ccc
+.number *
+	display: inline-block
+.telI:before
+	font: 22px FontAwesome
+	content: "\f095"
+	padding: 7px
+.soc *
+	padding: 7px
+	font: 18px FontAwesome
+.F:before
+	content: "\f09a"
+.T:before
+	content: "\f099"
+.Y:before
+	content: "\f167"
+.I:before
+	content: "\f16d"
+.telI:hover,.tel:hover,.imeil:hover,.soc i:hover
+	color: #fff
+	cursor: pointer
+	
+nav
+	position: relative
+
+////////////////////////////////
+//NAV 1
+//////////////////////////////
+nav
+	font-size: 1.6em
+	
+.wrapNav1Sub
+	display: flex
+	justify-content: space-between
+	flex-wrap: no-wrap		//?
+	// position: relative
+.wn1sb
+	z-index: 3
+.logo
+	align-self: center
+.wrapNav1SubBlock
+	display: flex
+	// min-width: 13.32%
+
+.a1 
+	box-sizing: border-box
+	text-decoration: none
+	padding: 1em 2em
+	color: #222
+	text-align: center
+	position: relative
+	left: 0
+
+	&:hover
+		color: blue
+	&:hover ~ .nav1Sub
+		display: flex
+
+.nav1Sub
+	display: none
+	background: #fff
+	flex-wrap: wrap
+	position: absolute
+	bottom: 0
+	left: 0 
+	width: 100%
+	transform: translateY(100%)
+	&:hover
+		display: flex
+.Z
+	box-sizing: border-box
+	padding: 1em 0 1em 2em
+	cursor: pointer
+	&:hover
+		color: blue
+.Z:before
+	content: "\f002"
+	font: 18px FontAwesome
+
+.wN1SB6
+	padding: 1em 0
+	display: inline-block
+
+
+
+
+
+
+
+
+
