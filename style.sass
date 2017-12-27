@@ -7,11 +7,19 @@
 // 	position: relative
 // width: 1100px
 
+	// font-family: Montserrat-Medium
 //////////////////
 	
 @font-face 
 	font-family: 'FontAwesome'
 	src: url('font.ttf')
+@font-face 
+	font-family: 'Montserrat-Medium'
+	src: url('Montserrat-Medium.ttf')
+@font-face 
+	font-family: 'Montserrat-Light'
+	src: url('Montserrat-Light.ttf')
+	
 *
 	padding: 0
 	margin: 0
@@ -19,12 +27,10 @@
 .posR
 	position: relative
 body
-	background: #ccc
 	font-family: sans-serif
 	padding: 0
 	margin: 0
 	font-size: 10px
-	background: #999
 
 .container
 	min-width: 920px
@@ -75,7 +81,6 @@ nav
 //////////////////////////////
 nav
 	font-size: 1.6em
-	
 .wrapNav1Sub
 	display: flex
 	justify-content: space-between
@@ -112,8 +117,20 @@ nav
 	left: 0 
 	width: 100%
 	transform: translateY(100%)
+	justify-content: space-between
+	padding: 18px 22px
 	&:hover
 		display: flex
+	.subBlock
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		width: 33,33%
+	.subBlock *
+		display: flex
+		text-decoration: none
+		padding: 6px
+		color: #333
 .Z
 	box-sizing: border-box
 	padding: 1em 0 1em 2em
@@ -128,11 +145,135 @@ nav
 	padding: 1em 0
 	display: inline-block
 
-
-
-
-
-
-
+////////////////////////// block 2
+aside
+.b2Fon
+	background-image: url("img/header-bg.jpg")
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+.asideWrap
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: 20% 8%
+	font-family: Montserrat-Light
+	color: #fff
+	h3
+		font-size: 2em
+		letter-spacing: 6px
+	h2
+		font-size: 6em
+	p
+		font-size: 1.6em
+		color: #ddd
+.asideWrap *
+	text-align: center
+	margin: 18px
+.aButon   //Стили копки
+	font-family: Montserrat-Medium
+	font-size: 2em
+	text-decoration: none
+	padding: 11px 44px
+	border-radius: 8px
+	background: #00ca8e
+	color: #fff
+.aButon:hover
+	background: #818a91
+///////////////////// aside 2
+.aside2Wrap
+	padding: 8% 9% 2% 9%
+	h3
+		font-size: 2.9em
+		color: #000
+	p
+		line-height: 1.9
+		color: #333
+/////////////////////// aside 3
+.aside3Wrap
+	display: flex
+	justify-content: space-between
+	margin: -1.6em
+.aside3Block
+	display: flex
+	flex-direction: column
+	flex-basis: 222px
+	flex-grow: 1
+	justify-content: center
+	align-items: center
+	box-sizing: content-box
+	border: 1px solid #ddd
+	margin: 1.6em
+	padding: 1.5em
+	img 
+		display: block
+		height: 55px
+		width: 55px
+		margin: 10px 10px 22px 10px
+	h4
+		font-family: Montserrat-Medium
+		font-size: 1.7em
+		padding: 0
+		margin: 0
+		color: #333
+	p
+		font-size: 1.4em
+		line-height: 2.2
+		color: #666
+.aside3Block *
+	margin: 1em
+	text-align: center
+///////////////////// aside 4
+.aside4
+	font-family: Montserrat-Light
+	display: flex
+	margin: 4em 0 0 0
+.aside4Block1
+	width: 50%
+	height: auto
+	background-image:  url(img/aside4Block1.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+.aside4Block2Wrap *
+	margin: 0 0 1.3em 0
+.aside4Block2Wrap
+	padding: 3em 15em 3em 3em
+	width: 50%
+	background: #fafafa
+	h3
+		font-size: 2.8em
+		// line-height: 0
+		// margin-bottom: 1em
+	h4 
+		font-size: 1.5em
+		line-height: 1.9
+	p
+		font-size: 1.4em
+		line-height: 2.2
+		padding-bottom: 2em
+	a 
+		font-size: 1.6em
+//////////////////////////  aside5
+//////////////////////////  aside6
+.aside6Wrap
+	display: flex
+	flex-wrap: wrap
+	flex-basis: 200px
+	font-family: Montserrat-Light
+.aside6Block
+	padding: 2.1em
+	width: 33%
+	img
+		height: 5%
+		margin: 0 0 2em 0
+	h3
+		font-size: 2em
+		line-height: 2.4
+	p
+		font-size: 1.4em
+		line-height: 2.2
+		padding-bottom: 2em
 
 
