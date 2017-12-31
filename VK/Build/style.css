@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("FontAwesome.ttf"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.conteiner {
+  display: flex;
+  width: var(--conteinerWidth);
+  margin: 0 auto; }
+
+body {
+  font-size: var(--fontSize); }
+
+header {
+  background: var(--colorBgHead); }
+  header .logo {
+    width: var(--blockWidthLite);
+    background: url(img/logo.svg) no-repeat; }
+  header .search {
+    display: flex;
+    width: var(--blockWidth);
+    border-radius: 15px;
+    overflow: hidden; }
+    header .search input {
+      height: 30px;
+      width: 100%;
+      background: var(--colorFonAkcentDark);
+      border: none; }
