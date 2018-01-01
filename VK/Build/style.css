@@ -17,16 +17,49 @@ body {
 
 header {
   background: var(--colorBgHead); }
-  header .logo {
-    width: var(--blockWidthLite);
-    background: url(img/logo.svg) no-repeat; }
-  header .search {
-    display: flex;
-    width: var(--blockWidth);
-    border-radius: 15px;
-    overflow: hidden; }
-    header .search input {
-      height: 30px;
-      width: 100%;
-      background: var(--colorFonAkcentDark);
-      border: none; }
+  header .header * {
+    padding: var(--padding); }
+  header .header {
+    display: flex; }
+    header .header__logo {
+      display: flex;
+      align-items: center;
+      width: var(--blockWidthLite);
+      padding: 0; }
+    header .header__search {
+      display: flex;
+      margin: var(--margin) 0;
+      padding: 0;
+      width: var(--blockWidth);
+      border-radius: 15px;
+      overflow: hidden;
+      background: var(--colorFonAkcentDark); }
+      header .header__search_img {
+        margin: 0 8px; }
+      header .header__search_input {
+        height: 30px;
+        width: 100%;
+        border: none;
+        background: inherit; }
+    header .header__icon {
+      display: flex; }
+      header .header__icon_img {
+        cursor: pointer;
+        align-items: center;
+        margin: 0 var(--margin);
+        padding: 0 var(--padding); }
+    header .header__name {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-grow: 1;
+      padding: 0; }
+      header .header__name_first {
+        cursor: pointer;
+        color: #ffffff; }
+      header .header__name_img {
+        height: 28px;
+        background: #994444;
+        border-radius: 50%;
+        padding: 0;
+        margin: var(--margin); }

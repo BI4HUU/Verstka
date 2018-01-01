@@ -13,19 +13,52 @@ body
 	font-size: var(--fontSize)
 header
 	background: var(--colorBgHead)
-	.logo
-		width: var(--blockWidthLite)
-		background: url(img/logo.svg) no-repeat
-	.search
+	.header *
+		padding: var(--padding)
+	.header
 		display: flex
-		width: var(--blockWidth)
-		border-radius: 15px
-		overflow: hidden
-		input
-			height: 30px
-			width: 100%
+		&__logo
+			display: flex
+			align-items: center
+			width: var(--blockWidthLite)
+			padding: 0
+		&__search
+			display: flex
+			margin: var(--margin) 0
+			padding: 0
+			width: var(--blockWidth)
+			border-radius: 15px
+			overflow: hidden
 			background: var(--colorFonAkcentDark)
-			border: none
+			&_img
+				margin: 0 8px
+			&_input
+				height: 30px
+				width: 100%
+				border: none
+				background: inherit
+		&__icon
+			display: flex
+			&_img
+				cursor: pointer
+				align-items: center
+				margin: 0 var(--margin)
+				padding: 0 var(--padding)
+		&__name
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			flex-grow: 1
+			padding: 0
+			&_first
+				cursor: pointer
+				color: #ffffff
+			&_img
+				height: 28px
+				background: #994444
+				border-radius: 50%
+				padding: 0
+				margin: var(--margin)
 
 nav
 

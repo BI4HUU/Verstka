@@ -3,10 +3,22 @@ html
 		meta(charset="UTF-8")
 	body
 		header 
-			.conteiner
-				.logo
-				.search o
-					input(type="text") Поиск
+			.conteiner.header
+				a(href='#').header__logo
+					img.header__logo_img(src="img/Logo.svg", alt="")
+				.header__search
+					img.header__search_img(src="img/loupe.svg", alt="")
+					input.header__search_input(type="text", placeholder=" Поиск" value="")
+				.header__icon
+					img.header__icon_img(src="img/notify.svg", alt="")
+					img.header__icon_img(src="img/audio.svg", alt="")
+				.header__name
+					.header__name_first Микола
+					img.header__name_img(src="img/logoMini.jpg", alt="")
+
+
+
+
 		nav
 		section
 		footer
