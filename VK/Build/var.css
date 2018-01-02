@@ -2,6 +2,7 @@
 	--colorAkcent: #9bd2eb;
 	--colorFonAkcentDark: #224b7a;
 	--colorFonAkcentLite: #dfe6ed;
+	--colorBackground: #edeef0;
 	--colorGray: #828282;
 	--colorGrayLite: #939393;
 	--colorFonHover: #f5f7fa;
@@ -9,9 +10,11 @@
 	--fontSize: 13px;
 	--fontSizeBig: 19px;
 	--conteinerWidth: 960px;
-	--blockWidthLite: 13%;
-	--blockWidth: 18%;
+	--blockWidthLite: 15%;
+	--blockWidth: 22%;
 	--margin: 8px;
+	--marginBig: 15px;
 	--padding: 8px;
+	--paddingBig: 15px;
 
 }
