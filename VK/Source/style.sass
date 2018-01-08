@@ -20,13 +20,12 @@ header
 	.header
 		display: flex
 		margin-bottom: var(--marginBig)
-
-		&__logo
+		.logo
 			display: flex
 			align-items: center
 			width: var(--blockWidthLite)
 			padding: 0
-		&__search
+		.search
 			display: flex
 			align-items: center
 			margin: var(--margin) 0
@@ -35,31 +34,31 @@ header
 			border-radius: 15px
 			overflow: hidden
 			background: var(--colorFonAkcentDark)
-			&_img
+			.img
 				margin: 0 8px
-			&_input
+			.input
 				height: 30px
 				width: 100%
 				color: white
 				border: none
 				background: inherit
-		&__icon
+		.icon
 			display: flex
-			&_img
+			.img
 				cursor: pointer
 				align-items: center
 				margin: 0 var(--margin)
 				padding: 0 var(--padding)
-		&__name
+		.name
 			display: flex
 			justify-content: flex-end
 			align-items: center
 			position: relative
 			flex-grow: 1
 			padding: 0
-			&__wrap *
+			.wrap *
 				padding: 0
-			&__wrap
+			.wrap
 				display: flex
 				align-items: center
 				position: absolute
@@ -67,10 +66,10 @@ header
 				margin: 0
 				top: 0
 				bottom: 0
-				&_first
+				.first
 					font-weight: 700
 					color: #ffffff
-				&_img
+				.img
 					height: 28px
 					background: #994444
 					border-radius: 50%
@@ -85,18 +84,28 @@ header
 		text-decoration: none
 		padding: var(--padding)
 		display: flex
-	&__icon
+	.icon
 		white-space: nowrap
 		background-position: 7px 6px
 		height: 20px
 		padding-left: 25px
 		background: url(img/menu_icon.png) no-repeat
+
+.imgMini
+	height: 50px
+	width: 50px
+	border-radius: 50%
+.gray
+	color: var(--colorGray)
 .aside
 	width:  var(--blockWidth)
 .block
 	background: #ffffff
 	padding: var(--paddingBig)
 	margin-bottom: var(--marginBig)
+	img 
+		position: relative
+		margin-bottom: var(--margin)
 	input
 		width: 100%
 		padding: var(--padding)
@@ -110,19 +119,45 @@ header
 		height: 66px
 		width: 66px
 		margin-top: var(--marginBig)
-	.block__caption
+	.caption
 		display: flex
 		width: 100%
-		margin-bottom: var(--marginBig)
-		.gray
-			color: var(--colorGray)
+		margin-bottom: var(--margin)
 		.end
 			margin-left: auto
 			font-size: .9em
-	.imgFriendsMini
-		height: 50px
-		width: 50px
-		border-radius: 50%
+	.wrapFriendsMini
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.blockFriendsMini
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-top: var(--marginBig)
+			p
+				text-align: center
+.interesting
+	.wrapInteresting
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.blockInteresting
+			display: flex
+			margin-top: var(--marginBig)
+			p
+				margin-left: var(--marginBig)
+.Gallery
+	.GalleryPhoto
+		img
+		p
+			margin: var(--marginBig)
+			color: #fff
+			font-weight: 700
+
+
+
+
 section
 
 footer
