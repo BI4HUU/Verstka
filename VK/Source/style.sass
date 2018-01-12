@@ -9,7 +9,11 @@
 	display: flex
 	width: var(--conteinerWidth)
 	margin: 0 auto
+.end
+	margin-left: auto
+	font-size: .9em
 body
+	color: var(--colorTxt)
 	font-size: var(--fontSize)
 	background: var(--colorBackground)
 	font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif
@@ -28,7 +32,7 @@ header
 		.search
 			display: flex
 			align-items: center
-			margin: var(--margin) 0
+			margin: var(--margin) var(--marginBig)
 			padding: 0
 			width: var(--blockWidth)
 			border-radius: 15px
@@ -97,8 +101,9 @@ header
 	border-radius: 50%
 .gray
 	color: var(--colorGray)
-.aside
+.aside2
 	width:  var(--blockWidth)
+	margin: 0 var(--marginBig)
 .block
 	background: #ffffff
 	padding: var(--paddingBig)
@@ -123,9 +128,6 @@ header
 		display: flex
 		width: 100%
 		margin-bottom: var(--margin)
-		.end
-			margin-left: auto
-			font-size: .9em
 	.wrapFriendsMini
 		display: flex
 		justify-content: space-between
@@ -149,15 +151,76 @@ header
 				margin-left: var(--marginBig)
 .Gallery
 	.GalleryPhoto
-		img
-		p
-			margin: var(--marginBig)
+		margin-top: var(--marginBig)
+		.imgFon1
+			background: url(img/fotoAlbom.jpg) no-repeat
+		.imgFon
+			height: 150px
 			color: #fff
-			font-weight: 700
-
-
-
-
+			.wrapFon
+				display: flex
+				// justify-content: center
+				align-items: flex-end
+				flex-direction: row
+				height: 100%
+				padding: var(--paddingBig)
+				background: rgba(1, 1, 1, .2)
+				p
+					font-weight: 700
+				.end
+					margin-left: auto
+					font-size: .9em
+.aside3
+	width: 100%
+	.block
+		.wrapName
+			display: flex
+			align-items: center
+			width: 100%
+			.h3
+				font-size: 1.5em
+				font-weight: 400
+		hr
+			margin: var(--marginBig) 0
+		.profWrap
+			display: flex
+			margin-top: var(--margin)
+			.l
+				width: 30%
+		.wrap2
+			display: flex
+			justify-content: center
+			.wrap1
+				text-decoration: none
+				text-align: center
+				margin: 0 var(--marginBig)
+				.count
+					font-size: 1.4em
+					color: var(--colorTxt)
+.imgAlbom
+	display: block
+	margin: auto
+	height: 123px
+	width: 123px
+	margin-top: var(--marginBig)
+.wrapInLine
+	display: flex
+	align-items: center
+	.imgMini
+		height: 28px
+		width: 28px
+	.txt
+		white-space: nowrap
+		margin-left: var(--marginBig)
+	.iWrap
+		display: flex
+		justify-content: flex-end
+		width: 100%
+		.i1:before
+			content: ''
+			background: url(img/post_icon.png) no-repeat
+			width: 22px
+			height: 22px
 section
 
 footer
