@@ -1,0 +1,204 @@
+.container
+	width: 80%
+	margin: 0 auto
+	min-width: 1000px
+	display: flex
+	flex-direction:row
+	position: relative
+
+body
+	font-family: sans-serif
+	padding: 0
+	margin: 0
+	font-size: 10px
+	background: #999
+
+header
+	background: #ddd
+	height: 30px
+////////////////////////////////
+//NAV 1
+//////////////////////////////
+nav
+	font-size: 1.6em
+	
+	.wrapNav1Sub
+		display: flex
+		justify-content: space-between
+		flex-wrap: no-wrap		//?
+		position: relative
+	.wn1sb
+		z-index: 3	
+		.wrapNav1SubBlock
+			display: flex
+			min-width: 13.32%
+
+			.a1 
+				min-width: 100%
+				box-sizing: border-box
+				text-decoration: none
+				padding: 1em 0 1em 0
+				background: #343238
+				color: #fff
+				border-top-left-radius: 0.5em
+				border-top-right-radius: 0.5em
+				text-align: center
+				position: relative
+				left: 0
+
+				&:hover
+					background: #fff
+					color: #000
+				&:hover ~ .nav1Sub
+					display: flex
+
+
+		.wN1SB1
+			min-width: 18%
+		.wN1SB2
+			min-width: 20%
+		.wN1SB3
+			min-width: 22%
+
+.nav1Sub
+	display: none
+	background: #fff
+	flex-wrap: wrap
+	position: absolute
+	bottom: 0
+	left: 0 
+	width: 100%
+	transform: translateY(100%)
+	&:hover
+		display: flex
+
+.Nav1SubEl
+	display: flex
+	flex-wrap: wrap
+	box-sizing: border-box
+	width: 33.3%
+	padding: 15px
+	img
+		height: 30px
+		width: 30px
+		align-self: center
+	h4
+		margin: 18px
+////////////////////////////////
+//NAV 2
+//////////////////////////////
+.wn2sb
+
+	position: relative
+	font-size: 0.9em
+	z-index: 2
+	width: 100%
+	&:hover .a2
+		background: #546e7a
+		color: #fff		
+
+	.a2
+		display: flex
+		flex-direction:row
+		align-items: center
+		padding: 0px
+		box-sizing: border-box
+		background: #ddd
+		color: #111
+		position: relative
+		text-decoration: none
+		&:hover
+			background: #546e7a
+			color: #fff
+		&:hover + .nav2Sub
+			transform: scaleY(1)
+			display: flex
+			transition: transform 0.2s
+			transform-origin: 0 0
+
+		img
+			height: 30px
+			padding: 10px
+
+		p 
+			padding: 0 0.5em 0 0
+
+.nav2Sub
+	display: none
+	// display: flex
+	flex-direction: column
+	transform: scaleY(0)
+	overflow: hidden 
+	transition: height 2.5s
+	position: absolute
+	width: 100%
+	z-index: 2
+	&:hover
+		display: flex
+		transform: scaleY(1)
+			
+	a	
+		padding: 5px
+		text-decoration: none
+		width: 100%
+		background: #546e7a
+		color: #fff
+		box-sizing: border-box
+		border-bottom: 1px #344e5a solid
+		&:last-child
+			border: 0
+		&:hover
+			background: #2196f3			
+////////////////////////////////
+//SECT 1
+//////////////////////////////
+.wrapSec1Head
+	font-size: 1.8em
+
+	input
+		display: none
+		&:checked + .sec1Sub
+			display: flex
+		&:checked label
+			background: red		
+
+	label
+		padding: 14px
+		width: 100%
+		background: #d6dee1
+		box-sizing: border-box
+		box-sizing: border-box
+		text-decoration: none
+		display: flex
+		align-self: center	
+		&:hover
+			background: #2196f3
+			
+		img
+			height: 20px
+			width: 20px
+			padding: 0 9px 0 0
+			align-self: center	
+		
+		div 
+			align-self: center	
+
+.sec1Sub
+	display: none
+	background: #fff
+	flex-wrap: wrap
+	position: absolute
+	bottom: 0
+	left: 0 
+	transform: translateY(100%)
+	width: 100%									
+
+
+
+
+
+
+
+
+
+
